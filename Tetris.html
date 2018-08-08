@@ -1,0 +1,62 @@
+<html>
+  <head>
+      <title>Tetris</title>
+      <meta charset="UTF-8">
+      <link rel ="stylesheet" type="text/css" href="res/css/tetris.css">
+  </head>
+  <body>
+      <audio src="res/music/bg_music.mp3"  autoplay  loop="loop" id="bgAudio"></audio>
+      <div class="gameBox">
+        <div class="gameBoxTop">
+          <p>Tetris</p>
+        </div>
+        <div>
+           <canvas class ="arena" id= "tetris" width="240" height="400" /></canvas>
+        </div>
+        
+        <div class="gameBoxRight">
+          <div class="preBox">
+             <canvas class ="preview" id ="preview" width="150" height="150"></canvas>
+          </div>
+          <!--score title-->
+          <div class="scoreTitle">Score</div>
+          <!--score-->
+          <div id="score" class="scoreNumber"></div>
+          <!--pause-->
+          <div class="button">
+            <button onclick="pause()">Pause</button>
+          </div>
+          <!--restart-->
+          <div class="button">
+            <button id="tets" onclick="restart()">Restart</button>
+          </div>
+          <!--direction-->
+          <div class="direction">
+            <div class="teach">↑ :&nbsp Rotate</div>
+          </div>
+          <div class="direction">
+            <div class="teach">↓ :&nbsp Down</div>
+          </div>
+          <div class="direction">
+            <div class="teach">← :&nbsp Left</div>
+          </div>
+          <div class="direction">
+            <div class="teach">→ :&nbsp Right</div>
+          </div>
+          <div class="direction">
+            <div class="teach">Q :&nbsp QuickDrop</div>
+          </div>
+        </div>
+        
+      </div>  
+      
+      
+      
+      
+      
+      
+  <script src="res/js/tetris.js"></script>
+      
+  </body>  
+
+</html>
